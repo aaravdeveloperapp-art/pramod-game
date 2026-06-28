@@ -1,0 +1,502 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "fullName": "Mining Energy Admin",
+      "mobile": "9999999999",
+      "email": "admin@miningenergy.com",
+      "passwordHash": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "role": "admin",
+      "referralCode": "ADMIN77",
+      "wallet": {
+        "deposit_balance": 100000,
+        "profit_balance": 50000,
+        "bonus_balance": 5000,
+        "referral_balance": 12000,
+        "frozen_balance": 0,
+        "total_balance": 167000
+      },
+      "status": "active",
+      "kycStatus": "verified",
+      "createdAt": "2026-05-29T14:31:45.250Z"
+    },
+    {
+      "id": "user_demo",
+      "fullName": "Aarav Sharma",
+      "mobile": "8888888888",
+      "email": "demo@miningenergy.com",
+      "passwordHash": "password",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "role": "user",
+      "referralCode": "MINE888",
+      "referredBy": "user_admin",
+      "wallet": {
+        "deposit_balance": 1500,
+        "profit_balance": 230,
+        "bonus_balance": 100,
+        "referral_balance": 150,
+        "frozen_balance": 0,
+        "total_balance": 1980
+      },
+      "status": "active",
+      "kycStatus": "verified",
+      "createdAt": "2026-06-18T14:31:45.250Z"
+    },
+    {
+      "id": "user_p7052ne",
+      "fullName": "AARAV SAHU",
+      "mobile": "9040845838",
+      "email": "aaravdeveloperapp@gmail.com",
+      "passwordHash": "admin90409040",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_p7052ne",
+      "role": "admin",
+      "referralCode": "MINE310003",
+      "wallet": {
+        "deposit_balance": 125000,
+        "profit_balance": 85400,
+        "bonus_balance": 5000,
+        "referral_balance": 12500,
+        "frozen_balance": 0,
+        "total_balance": 227900
+      },
+      "status": "active",
+      "kycStatus": "verified",
+      "createdAt": "2026-06-28T14:33:58.095Z"
+    },
+    {
+      "id": "user_aarav12",
+      "fullName": "AARAV SAHU",
+      "mobile": "9040845839",
+      "email": "aaravdeveloperapp12@gmail.com",
+      "passwordHash": "admin90409040",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_aarav12",
+      "role": "admin",
+      "referralCode": "MINE310012",
+      "wallet": {
+        "deposit_balance": 125000,
+        "profit_balance": 85400,
+        "bonus_balance": 5000,
+        "referral_balance": 12500,
+        "frozen_balance": 0,
+        "total_balance": 227900
+      },
+      "status": "active",
+      "kycStatus": "verified",
+      "createdAt": "2026-06-28T15:27:00.000Z"
+    },
+    {
+      "id": "user_ogkxo9d",
+      "fullName": "AARAV SAHU",
+      "mobile": "8144553816",
+      "email": "aaravdeveloperapp1@gmail.com",
+      "passwordHash": "90409040",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_ogkxo9d",
+      "role": "user",
+      "referralCode": "MINE501243",
+      "wallet": {
+        "deposit_balance": 0,
+        "profit_balance": 0,
+        "bonus_balance": 100,
+        "referral_balance": 0,
+        "frozen_balance": 0,
+        "total_balance": 100
+      },
+      "status": "active",
+      "kycStatus": "unverified",
+      "createdAt": "2026-06-28T15:01:11.740Z"
+    },
+    {
+      "id": "user_eumfsiw",
+      "fullName": "AARAV SAHU",
+      "mobile": "8260297061",
+      "email": "aaravdeveloperapp99@gmail.com",
+      "passwordHash": "147/",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_eumfsiw",
+      "role": "user",
+      "referralCode": "MINE198263",
+      "wallet": {
+        "deposit_balance": 5000,
+        "profit_balance": 0,
+        "bonus_balance": 100,
+        "referral_balance": 0,
+        "frozen_balance": 0,
+        "total_balance": 5100
+      },
+      "status": "active",
+      "kycStatus": "unverified",
+      "createdAt": "2026-06-28T15:31:05.787Z"
+    },
+    {
+      "id": "user_88l882c",
+      "fullName": "AARAV SAHU",
+      "mobile": "7735667103",
+      "email": "aaravdeveloperapp78@gmail.com",
+      "passwordHash": "773566",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_88l882c",
+      "role": "user",
+      "referralCode": "MINE856980",
+      "wallet": {
+        "deposit_balance": 0,
+        "profit_balance": 0,
+        "bonus_balance": 100,
+        "referral_balance": 0,
+        "frozen_balance": 0,
+        "total_balance": 100
+      },
+      "status": "active",
+      "kycStatus": "unverified",
+      "createdAt": "2026-06-28T15:48:50.101Z"
+    },
+    {
+      "id": "user_z0payf3",
+      "fullName": "Test User",
+      "mobile": "9182213005",
+      "email": "test88pv9h@example.com",
+      "passwordHash": "password123",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=user_z0payf3",
+      "role": "user",
+      "referralCode": "MINE798565",
+      "wallet": {
+        "deposit_balance": 0,
+        "profit_balance": 0,
+        "bonus_balance": 100,
+        "referral_balance": 0,
+        "frozen_balance": 0,
+        "total_balance": 100
+      },
+      "status": "active",
+      "kycStatus": "unverified",
+      "createdAt": "2026-06-28T17:01:38.160Z"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan_solar_1",
+      "name": "Solar Power Miner S1",
+      "category": "normal",
+      "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&auto=format&fit=crop&q=60",
+      "price": 300,
+      "dailyIncome": 12,
+      "durationDays": 30,
+      "totalIncome": 360,
+      "roiPercentage": 120,
+      "maxPurchase": 5,
+      "description": "High-efficiency silicon photo-voltaic array mining node. Standard entry level miner.",
+      "isActive": true
+    },
+    {
+      "id": "plan_wind_1",
+      "name": "Wind Farm Miner W1",
+      "category": "normal",
+      "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&auto=format&fit=crop&q=60",
+      "price": 700,
+      "dailyIncome": 30,
+      "durationDays": 45,
+      "totalIncome": 1350,
+      "roiPercentage": 192,
+      "maxPurchase": 3,
+      "description": "Dynamic wind-turbine generator feeding high-density ASIC boards. Optimal regular earner.",
+      "isActive": true
+    },
+    {
+      "id": "plan_geo_1",
+      "name": "Geothermal Core Miner G1",
+      "category": "normal",
+      "image": "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=400&auto=format&fit=crop&q=60",
+      "price": 1500,
+      "dailyIncome": 68,
+      "durationDays": 60,
+      "totalIncome": 4080,
+      "roiPercentage": 272,
+      "maxPurchase": 2,
+      "description": "Taps directly into underground geothermal heat vents for steady, uninterrupted mining power.",
+      "isActive": true
+    },
+    {
+      "id": "plan_hydro_1",
+      "name": "Hydro-Electric Miner H1",
+      "category": "normal",
+      "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=400&auto=format&fit=crop&q=60",
+      "price": 3000,
+      "dailyIncome": 145,
+      "durationDays": 60,
+      "totalIncome": 8700,
+      "roiPercentage": 290,
+      "maxPurchase": 2,
+      "description": "Utilizes water-current energy turbines for ultra-high hash rate stability and efficiency.",
+      "isActive": true
+    },
+    {
+      "id": "plan_vip_fusion",
+      "name": "Fusion Nucleus VIP",
+      "category": "vip",
+      "image": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=400&auto=format&fit=crop&q=60",
+      "price": 5000,
+      "dailyIncome": 260,
+      "durationDays": 45,
+      "totalIncome": 11700,
+      "roiPercentage": 234,
+      "maxPurchase": 1,
+      "description": "VIP node tapping simulated plasma fusion core grids. Unprecedented hash power outputs.",
+      "isActive": true
+    },
+    {
+      "id": "plan_vip_quantum",
+      "name": "Quantum Energy Core VIP",
+      "category": "vip",
+      "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&auto=format&fit=crop&q=60",
+      "price": 10000,
+      "dailyIncome": 560,
+      "durationDays": 45,
+      "totalIncome": 25200,
+      "roiPercentage": 252,
+      "maxPurchase": 1,
+      "description": "Quantum entanglement multi-threaded server rigs. Ultimate cryptocurrency yield tier.",
+      "isActive": true
+    }
+  ],
+  "investments": [
+    {
+      "id": "inv_demo_1",
+      "userId": "user_demo",
+      "planId": "plan_solar_1",
+      "planName": "Solar Power Miner S1",
+      "purchaseAmount": 300,
+      "dailyIncome": 12,
+      "totalIncome": 360,
+      "earnedIncome": 48,
+      "durationDays": 30,
+      "startDate": "2026-06-24T14:31:45.250Z",
+      "endDate": "2026-07-24T14:31:45.250Z",
+      "lastClaimDate": "2026-06-27T14:31:45.250Z",
+      "status": "active"
+    },
+    {
+      "id": "inv_demo_2",
+      "userId": "user_demo",
+      "planId": "plan_wind_1",
+      "planName": "Wind Farm Miner W1",
+      "purchaseAmount": 700,
+      "dailyIncome": 30,
+      "totalIncome": 1350,
+      "earnedIncome": 60,
+      "durationDays": 45,
+      "startDate": "2026-06-26T14:31:45.250Z",
+      "endDate": "2026-08-10T14:31:45.250Z",
+      "lastClaimDate": "2026-06-27T14:31:45.250Z",
+      "status": "active"
+    }
+  ],
+  "earnings": [
+    {
+      "id": "earn_1",
+      "userId": "user_demo",
+      "investmentId": "inv_demo_1",
+      "planName": "Solar Power Miner S1",
+      "amount": 12,
+      "date": "2026-06-25T14:31:45.250Z"
+    },
+    {
+      "id": "earn_2",
+      "userId": "user_demo",
+      "investmentId": "inv_demo_1",
+      "planName": "Solar Power Miner S1",
+      "amount": 12,
+      "date": "2026-06-26T14:31:45.250Z"
+    },
+    {
+      "id": "earn_3",
+      "userId": "user_demo",
+      "investmentId": "inv_demo_1",
+      "planName": "Solar Power Miner S1",
+      "amount": 12,
+      "date": "2026-06-27T14:31:45.250Z"
+    },
+    {
+      "id": "earn_4",
+      "userId": "user_demo",
+      "investmentId": "inv_demo_2",
+      "planName": "Wind Farm Miner W1",
+      "amount": 30,
+      "date": "2026-06-27T14:31:45.250Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_demo_1",
+      "userId": "user_demo",
+      "type": "deposit",
+      "amount": 1000,
+      "status": "completed",
+      "remarks": "Initial wallet load",
+      "createdAt": "2026-06-18T14:31:45.250Z",
+      "paymentReference": "UPI-9871239812-OK"
+    },
+    {
+      "id": "tx_demo_2",
+      "userId": "user_demo",
+      "type": "investment",
+      "amount": 300,
+      "status": "completed",
+      "remarks": "Bought Solar Power Miner S1",
+      "createdAt": "2026-06-24T14:31:45.250Z"
+    },
+    {
+      "id": "tx_demo_3",
+      "userId": "user_demo",
+      "type": "investment",
+      "amount": 700,
+      "status": "completed",
+      "remarks": "Bought Wind Farm Miner W1",
+      "createdAt": "2026-06-26T14:31:45.250Z"
+    },
+    {
+      "id": "tx_demo_4",
+      "userId": "user_demo",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome bonus",
+      "createdAt": "2026-06-18T14:31:45.250Z"
+    },
+    {
+      "id": "tx_64s7gb0",
+      "userId": "user_p7052ne",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome Signup Reward",
+      "createdAt": "2026-06-28T14:33:58.095Z"
+    },
+    {
+      "id": "tx_y4rc5bq",
+      "userId": "user_ogkxo9d",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome Signup Reward",
+      "createdAt": "2026-06-28T15:01:11.740Z"
+    },
+    {
+      "id": "tx_2hh19hg",
+      "userId": "user_eumfsiw",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome Signup Reward",
+      "createdAt": "2026-06-28T15:31:05.787Z"
+    },
+    {
+      "id": "tx_fk7uyru",
+      "userId": "user_eumfsiw",
+      "type": "deposit",
+      "amount": 5000,
+      "status": "completed",
+      "remarks": "Recharge approved: ₹5000 credited to Deposit Wallet",
+      "createdAt": "2026-06-28T15:31:33.748Z",
+      "paymentReference": "777777744455555555555555"
+    },
+    {
+      "id": "tx_o4j94ly",
+      "userId": "user_eumfsiw",
+      "type": "deposit",
+      "amount": 5000,
+      "status": "pending",
+      "remarks": "Recharge wallet request via UPI",
+      "createdAt": "2026-06-28T15:31:52.978Z",
+      "paymentReference": "4545458756544"
+    },
+    {
+      "id": "tx_jjt8gn9",
+      "userId": "user_88l882c",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome Signup Reward",
+      "createdAt": "2026-06-28T15:48:50.101Z"
+    },
+    {
+      "id": "tx_onhaqha",
+      "userId": "user_88l882c",
+      "type": "deposit",
+      "amount": 700,
+      "status": "pending",
+      "remarks": "Recharge wallet request via UPI",
+      "createdAt": "2026-06-28T16:32:12.881Z",
+      "paymentReference": "789456123147"
+    },
+    {
+      "id": "tx_zezp8tk",
+      "userId": "user_z0payf3",
+      "type": "signup_bonus",
+      "amount": 100,
+      "status": "completed",
+      "remarks": "Welcome Signup Reward",
+      "createdAt": "2026-06-28T17:01:38.160Z"
+    }
+  ],
+  "referrals": [
+    {
+      "id": "ref_log_1",
+      "referrerId": "user_admin",
+      "referredUserId": "user_demo",
+      "referredUserName": "Aarav Sharma",
+      "level": 1,
+      "commissionAmount": 150,
+      "createdAt": "2026-06-18T14:33:58.095Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "ticket_demo_1",
+      "userId": "user_demo",
+      "userEmail": "demo@miningenergy.com",
+      "subject": "Withdrawal Speed Query",
+      "category": "withdraw",
+      "message": "What are the usual processing windows for bank transfers?",
+      "status": "replied",
+      "createdAt": "2026-06-26T14:33:58.095Z",
+      "replies": [
+        {
+          "sender": "user",
+          "message": "What are the usual processing windows for bank transfers?",
+          "createdAt": "2026-06-26T14:33:58.095Z"
+        },
+        {
+          "sender": "admin",
+          "message": "Hello Aarav, transfers take less than 1 hour on weekdays and up to 3 hours on weekends. Standard UPI withdrawal is almost instant!",
+          "createdAt": "2026-06-26T16:57:58.095Z"
+        }
+      ]
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann_1",
+      "title": "Mining Energy Officially Launches Internationally",
+      "content": "We are thrilled to welcome our first 50,000 miners! Recharge options have been expanded to include direct UPI and global credit cards.",
+      "createdAt": "2026-06-28T14:31:45.250Z"
+    },
+    {
+      "id": "ann_2",
+      "title": "Withdrawal Times Reduced to Under 1 Hour",
+      "content": "Thanks to our automated bank settlements, withdrawal processing is now faster than ever! Daily withdrawal limits have also been increased.",
+      "createdAt": "2026-06-27T14:31:45.250Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": "banner_1",
+      "title": "Double Referral Rewards Weekend",
+      "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=80",
+      "link": "#team"
+    },
+    {
+      "id": "banner_2",
+      "title": "New VIP Green Energy Plans Released",
+      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop&q=80",
+      "link": "#shop"
+    }
+  ]
+}

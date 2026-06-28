@@ -1,0 +1,196 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User accounts with balance and settings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "mobile": { "type": "string" },
+        "email": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "avatar": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin"] },
+        "referralCode": { "type": "string" },
+        "referredBy": { "type": "string" },
+        "wallet": { "type": "object" },
+        "status": { "type": "string", "enum": ["active", "suspended"] },
+        "kycStatus": { "type": "string", "enum": ["unverified", "pending", "verified"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "lastLogin": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "fullName", "mobile", "email", "passwordHash", "role", "referralCode", "wallet", "status", "kycStatus", "createdAt"]
+    },
+    "InvestmentPlan": {
+      "title": "InvestmentPlan",
+      "description": "Mining packages available for purchase",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string", "enum": ["normal", "vip"] },
+        "image": { "type": "string" },
+        "price": { "type": "number" },
+        "dailyIncome": { "type": "number" },
+        "durationDays": { "type": "number" },
+        "totalIncome": { "type": "number" },
+        "roiPercentage": { "type": "number" },
+        "maxPurchase": { "type": "number" },
+        "description": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["id", "name", "category", "image", "price", "dailyIncome", "durationDays", "totalIncome", "roiPercentage", "maxPurchase", "description", "isActive"]
+    },
+    "Investment": {
+      "title": "Investment",
+      "description": "Active mining plans purchased by users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "planId": { "type": "string" },
+        "planName": { "type": "string" },
+        "purchaseAmount": { "type": "number" },
+        "dailyIncome": { "type": "number" },
+        "totalIncome": { "type": "number" },
+        "earnedIncome": { "type": "number" },
+        "durationDays": { "type": "number" },
+        "startDate": { "type": "string" },
+        "endDate": { "type": "string" },
+        "lastClaimDate": { "type": "string" },
+        "status": { "type": "string", "enum": ["active", "completed", "cancelled"] }
+      },
+      "required": ["id", "userId", "planId", "planName", "purchaseAmount", "dailyIncome", "totalIncome", "earnedIncome", "durationDays", "startDate", "endDate", "lastClaimDate", "status"]
+    },
+    "DailyEarning": {
+      "title": "DailyEarning",
+      "description": "Daily mining earnings history logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "investmentId": { "type": "string" },
+        "planName": { "type": "string" },
+        "amount": { "type": "number" },
+        "date": { "type": "string" }
+      },
+      "required": ["id", "userId", "investmentId", "planName", "amount", "date"]
+    },
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Deposit, withdrawal, and reward transactions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "type": { "type": "string", "enum": ["deposit", "withdrawal", "investment", "mining_profit", "referral_commission", "signup_bonus"] },
+        "amount": { "type": "number" },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected", "completed"] },
+        "remarks": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "upiId": { "type": "string" },
+        "accountNumber": { "type": "string" },
+        "bankName": { "type": "string" },
+        "ifsc": { "type": "string" },
+        "paymentReference": { "type": "string" }
+      },
+      "required": ["id", "userId", "type", "amount", "status", "remarks", "createdAt"]
+    },
+    "ReferralLog": {
+      "title": "ReferralLog",
+      "description": "Multi-level referral commission history records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "referrerId": { "type": "string" },
+        "referredUserId": { "type": "string" },
+        "referredUserName": { "type": "string" },
+        "level": { "type": "number", "enum": [1, 2, 3] },
+        "investmentId": { "type": "string" },
+        "commissionAmount": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "referrerId", "referredUserId", "referredUserName", "level", "commissionAmount", "createdAt"]
+    },
+    "SupportTicket": {
+      "title": "SupportTicket",
+      "description": "User support tickets and conversation threads",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "subject": { "type": "string" },
+        "category": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "replied", "closed"] },
+        "replies": { "type": "array" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "userEmail", "subject", "category", "message", "status", "replies", "createdAt"]
+    },
+    "Announcement": {
+      "title": "Announcement",
+      "description": "Platform announcements displayed to users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "content", "createdAt"]
+    },
+    "AppBanner": {
+      "title": "AppBanner",
+      "description": "Aesthetic promotional slide banners for the dashboard",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "image": { "type": "string" },
+        "link": { "type": "string" }
+      },
+      "required": ["id", "title", "image", "link"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Registered app users"
+    },
+    "/plans/{planId}": {
+      "schema": "InvestmentPlan",
+      "description": "Platform mining plans"
+    },
+    "/investments/{investmentId}": {
+      "schema": "Investment",
+      "description": "Active mining plan contracts"
+    },
+    "/earnings/{earningId}": {
+      "schema": "DailyEarning",
+      "description": "Daily mining generation payout logs"
+    },
+    "/transactions/{transactionId}": {
+      "schema": "Transaction",
+      "description": "User transactions (deposit, withdrawal, commission)"
+    },
+    "/referrals/{referralId}": {
+      "schema": "ReferralLog",
+      "description": "Commission history records"
+    },
+    "/tickets/{ticketId}": {
+      "schema": "SupportTicket",
+      "description": "User helpdesk tickets"
+    },
+    "/announcements/{announcementId}": {
+      "schema": "Announcement",
+      "description": "Platform news articles"
+    },
+    "/banners/{bannerId}": {
+      "schema": "AppBanner",
+      "description": "UI slider graphic assets"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Default-deny catch-all gate (Pillar 1)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions (Pillar 3)
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // 1. Users collection
+    match /users/{userId} {
+      // Users can read their own profiles, but not write directly (server administers the wallet)
+      allow read: if isOwner(userId);
+      allow write: if false;
+    }
+
+    // 2. Plans collection (Publicly readable)
+    match /plans/{planId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // 3. Investments collection (User reads their own)
+    match /investments/{investmentId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+
+    // 4. Earnings collection (User reads their own)
+    match /earnings/{earningId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+
+    // 5. Transactions collection (User reads their own)
+    match /transactions/{transactionId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+
+    // 6. Referrals collection (User reads their own)
+    match /referrals/{referralId} {
+      allow read: if isSignedIn() && resource.data.referrerId == request.auth.uid;
+      allow write: if false;
+    }
+
+    // 7. Tickets collection (User reads and updates/creates, or purely server-mediated)
+    match /tickets/{ticketId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+
+    // 8. Announcements collection (Publicly readable)
+    match /announcements/{announcementId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // 9. Banners collection (Publicly readable)
+    match /banners/{bannerId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

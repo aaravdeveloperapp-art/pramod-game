@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Mining Energy",
+  "description": "Cryptocurrency Mining Investment Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
